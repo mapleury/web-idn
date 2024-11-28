@@ -6,6 +6,7 @@
   <title>IDN Akhwat</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 
 </head>
 <body>
@@ -25,13 +26,13 @@
       <!-- Navbar -->
       <header>
         <div class="menu-icon">☰</div>
-        <div class="navbar">
+        <div class="navbar" data-aos="fade-down">
             <button class="nav-button" onclick="location.href='vision.html'">Vision</button>
             <button class="nav-button">Mission</button>
           
         </div>
         
-        <div class="nav-items">
+        <div class="nav-items"data-aos="fade-left">
           <div class="icons">
             <span class="icon eye"></span>
             <span class="icon user"></span>
@@ -64,7 +65,7 @@
   
  
   <section class="interactive-section">
-    <div class="scrolling-text">
+    <div class="scrolling-text" data-aos="zoom-in">
       <img class="svg-text" src="assets/Group 48.svg" alt="IDN Akhwat">
     
     </div>
@@ -79,8 +80,8 @@
   <div class="news-section container py-5" id="News">
 
 
-    <div class="news-container">
-      <div class="news-item">
+    <div class="news-container"  data-aos="zoom-out-down">
+      <div class="news-item" >
         <div class="news-image">
 
         </div>
@@ -115,7 +116,7 @@
   
 
 <!-- START CONTACT -->
-  <div class="contact" id="text"><div id="text">
+  <div class="contact" id="text"><div id="text" data-aos="zoom-out-up">
     <div class="line">
       <p class="word">Go</p>
       <p class="word">Contact</p>
@@ -144,75 +145,25 @@
     </div>
   </div>
 
-<!-- KEGIATAN ASRAMA -->
-<section class="page-section portfolio" id="portfolio">
-    <div class="container">
-        <!-- Portfolio Section Heading-->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-line"></div>
-        </div>
-        <!-- Portfolio Grid Items-->
-        <div class="row">
-            <!-- Portfolio Item 1-->
-            <div class="col">
-                <div class="portfolio-item" onclick="openModal('modal1')">
-                    <div class="portfolio-item-caption">
-                        <div class="portfolio-item-caption-content"><i class="fas fa-plus"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img1.png" alt="Portfolio Item 1" />
-                </div>
-            </div>
-            <!-- Portfolio Item 2-->
-            <div class="col">
-                <div class="portfolio-item" onclick="openModal('modal 2')">
-                    <div class="portfolio-item-caption">
-                        <div class="portfolio-item-caption-content"><i class="fas fa-plus"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img2.png" alt="Portfolio Item 2" />
-                </div>
-            </div>
-            <!-- Portfolio Item 3-->
-            <div class="col">
-                <div class="portfolio-item" onclick="openModal('modal3')">
-                    <div class="portfolio-item-caption">
-                        <div class="portfolio-item-caption-content"><i class="fas fa-plus"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img3.png" alt="Portfolio Item 3" />
-                </div>
-            </div>
-            <!-- Portfolio Item 4-->
-            <div class="col">
-                <div class="portfolio-item" onclick="openModal('modal4')">
-                    <div class="portfolio-item-caption">
-                        <div class="portfolio-item-caption-content"><i class="fas fa-plus"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img4.png" alt="Portfolio Item 4" />
-                </div>
-            </div>
-            <!-- Portfolio Item 5-->
-            <div class="col">
-                <div class="portfolio-item" onclick="openModal('modal5')">
-                    <div class="portfolio-item-caption">
-                        <div class="portfolio-item-caption-content"><i class="fas fa-plus"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img5.png" alt="Portfolio Item 5" />
-                </div>
-            </div>
-            <!-- Portfolio Item 6-->
-            <div class="col">
-                <div class="portfolio-item" onclick="openModal('modal6')">
-                    <div class="portfolio-item-caption">
-                        <div class="portfolio-item-caption-content"><i class="fas fa-plus"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img6.png" alt="Portfolio Item 6" />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-  
+  <!-- IDN HEBAT -->
+   <section class="grid">
+  <div class="grid-container">
+    <div class="grid-item red">Image 1</div>
+    <div class="grid-item purple-long">Image 2</div>
+    <div class="grid-item lavender">Image 3</div>
+    <div class="grid-item yellow">Image 4</div>
+    <div class="grid-item blue-long">Image 5</div>
+
+  </div>
+</section>
+        
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 
 
@@ -229,5 +180,13 @@
   </script>
   <script src="js/contact.js"></script>
   <script src="js/cursor.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
+  </script>
   
 </html>

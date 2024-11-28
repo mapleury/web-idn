@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -110,7 +110,6 @@ header {
 }
 
   /* Navbar */
-
 .navbar {
     display: flex;
     justify-content: center; 
@@ -118,7 +117,7 @@ header {
     padding: 10px 20px;
     position: absolute;
     top: 20px; 
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
     border: 2px solid #a66eff; 
     border-radius: 40px; 
@@ -337,14 +336,14 @@ section.bg-purple {
   }
 
   .svg-text {
-    height: 150px; /* Adjust height as needed */
-    flex-shrink: 0; /* Prevents shrinking of SVGs */
+    height: 150px; 
+    flex-shrink: 0; 
   }
 
   .text-section {
     display: flex;
-    justify-content: space-between; /* Distributes space between the items */
-    align-items: center; /* Vertically aligns the content */
+    justify-content: space-between; 
+    align-items: center;
     padding: 150px;
     background-color: #7A00F9;
     height: 30vh;
@@ -374,31 +373,31 @@ section.bg-purple {
 /* about us */
 
 .projects {
-    margin-right: 0; /* Remove any offset for perfect centering */
+    margin-right: 0;
 }
 
 .heading {
-    text-align: center; /* Centers text within the section */
+    text-align: center; 
     font-size: 4.5rem;
     color: #3f179d;
 }
 
 .news-section {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
     background-color:  #7A00F9;
     padding: 40px 0;
     text-align: center;
-    height: 30vh; /* Ensures full screen height */
+    height: 30vh;
 }
 
 .news-container {
     background-color:  #7A00F9;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centers items horizontally */
+    justify-content: center;
     gap: 30px;
 }
 
@@ -623,12 +622,12 @@ section.bg-purple {
     }
 
     50% {
-        transform: scale(0.8) translateY(50px); /* Shake downwards */
+        transform: scale(0.8) translateY(50px); 
         opacity: 1;
     }
 
     75% {
-        transform: scale(1.3) translateY(-15px); /* Shake upwards again */
+        transform: scale(1.3) translateY(-15px); 
         opacity: 1;
     }
 
@@ -701,8 +700,228 @@ section.bg-purple {
     }
 }
 
-/* For the specific element that you want to delay the animation */
 .sliding-image:nth-child(3) {
     animation-delay: 1.5s;
     animation: slide-left-grow 1.5s ease forwards;
 }
+
+/* idn hebat */
+
+
+.slider{
+    width: 70vw;
+    overflow: auto;
+    padding: 100px;
+    box-sizing: border-box;
+    background-color: #fff3;
+    border-radius: 20px;
+ }
+ .slider::-webkit-scrollbar{
+    width: 0;
+ }
+ .slider .form{
+    width: max-content;
+    --left: 0;
+    transform: translateX(var(--left));
+ }
+ .title{
+    padding: 20px 0;
+    color: #fff;
+    text-shadow: 0 0 10px #0007;
+    font-weight: 500;
+    font-size: large;
+ }
+ 
+ 
+ .slider .form .item{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin-right: 20px;
+    transform: perspective(10px);
+    transform-style: preserve-3d;
+ }
+ .slider .form .item .content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform .5s;
+ }
+ 
+ 
+ .slider .form .item.active .content {
+    transform: perspective(1000px) rotateY(0deg) scale(1.1);
+    z-index: 2;
+ }
+ 
+ 
+ .slider .form .item.near-left .content {
+    transform: perspective(1000px) rotateY(-25deg) scale(0.9); 
+ }
+ 
+ 
+ .slider .form .item.near-right .content {
+    transform: perspective(1000px) rotateY(25deg) scale(0.9); 
+ }
+ 
+ 
+ .slider .form .item .content {
+    transition: transform 0.5s, z-index 0.5s;
+ }
+ 
+ 
+ 
+ 
+ .slider .form .item .content .des{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    font-family: monospace;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+ }
+ .slider .form .item .content .des button{
+    background-color: #eee;
+    border: none;
+    border-radius: 10px;
+    font-size: small;
+ }
+ 
+ 
+ .slider .form .item.active .content {
+    transform: perspective(1000px) rotateY(0deg) scale(1); 
+    z-index: 2;
+ }
+ 
+ 
+ .slider .form .item.near-left .content {
+    transform: perspective(1000px) rotateY(-20deg) scale(0.8);
+ }
+ 
+ 
+ .slider .form .item.near-right .content {
+    transform: perspective(1000px) rotateY(20deg) scale(0.8); 
+ }
+ 
+ 
+ .slider .form .item .content {
+    transition: transform 0.5s, z-index 0.5s;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .slider .form .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ 
+ .idnhebat {
+        margin: 0;
+        background-image: url(assets/Frame\ 11\ \(1\).png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ }
+
+ /* IDN HEBAT */
+
+ .grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 50px;
+    width: 90%;
+    height: max-content ;
+
+  }
+  
+  .grid-item {
+
+    border-radius: 10px;
+    height: 140px;
+    background-color: #fff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+  }
+  
+  /* Specific placement and sizing */
+  .red {
+    grid-column: span 2;
+    grid-row: 1 / 2;
+    background-color: #f47463;
+  }
+  
+  .purple-long {
+    grid-column: span 2;
+    grid-row: 1 / 2;
+    background-color: #b07df1;
+  }
+  
+  .lavender {
+    grid-column: span 1;
+    grid-row: 2 / 3;
+    background-color: #c292f3;
+  }
+  
+  .yellow {
+    grid-column: span 1;
+    grid-row: 2 / 3;
+    background-color: #f8c66b;
+  }
+  
+  .blue-long {
+    grid-column: span 2;
+    grid-row: 2 / 3;
+    background-color: #8ed5f5;
+  }
+  
+  .dark-purple {
+    grid-column: span 2;
+    grid-row: 2 / 3;
+    background-color: #6f4ef4;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .red,
+    .purple-long {
+      grid-column: span 2;
+    }
+  
+    .blue-long,
+    .dark-purple {
+      grid-column: span 2;
+    }
+  }
+
+  .grid {
+    width: 180vh;
+    height: 130vh;
+    max-height: 2000px;
+  }
