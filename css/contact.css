@@ -179,7 +179,6 @@
   .fancy:hover > .outer:nth-child(16) {
       transform: translate(80%, 30%) rotate(10deg);
     }
-  /* -- YouTube Link Styles -- */
   
   
   body.menu-toggled > .meta-link > span {

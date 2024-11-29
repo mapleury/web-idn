@@ -137,12 +137,7 @@ slider.onmousemove = (e) => {
    }
 };
 
-
-// Perbarui kelas saat load awal
 updateClasses();
-
-
-
 
 
 

@@ -9,17 +9,19 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    transform: translateY(30px);
+    animation: fadeUp 1s ease-out forwards;
 }
 
 .menu-item {
     color: white;
     font-size: clamp(3rem, 8vw, 8rem);
     font-family: Arial, sans-serif;
-
     display: block;
     text-decoration: none;
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     transition: opacity 400ms ease;
+
 }
 
 #menu-items {
@@ -159,3 +161,16 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

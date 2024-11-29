@@ -1,0 +1,86 @@
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.card {
+    background: #7846F3;
+    color: #94E2FF;
+    width: 18rem;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-radius: 50px; /* Optional: rounded corners for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow untuk card */
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out; /* Transition lebih halus */
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+
+.card:hover {
+    transform: scale(1.03) rotate(2deg); /* Efek perbesaran sedikit dan rotasi lebih kecil */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow lebih besar saat hover */
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+
+.card .card-title {
+    font-size: 1.5rem; /* Ukuran judul */
+    font-weight: bold; /* Menebalkan judul */
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.figma-icon {
+    font-size: 4rem;
+    padding-bottom: 1rem;
+}
+
+
+.code-icon {
+    font-size: 4rem;
+}
+
+
+.card .card-subtitle {
+    margin-bottom: 1rem;
+}
+
+
+.card .card-text {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* Animasi tambahan untuk efek lebih smooth */
+.card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(42, 252, 152, 0.4), rgba(41, 121, 255, 0.4));
+    opacity: 0.5;
+    transition: opacity 0.4s ease-in-out; /* Transisi opacity lebih halus */
+    z-index: -1; /* Di belakang card */
+}
+
+
+

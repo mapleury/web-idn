@@ -10,13 +10,13 @@
 
 </head>
 <body>
-  <div class="container">
+  <div class="container-hero">
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-text">Jagoan IT Pinter Ngaji</div>
       <div class="sidebar-text bubble">
         <a href="https://api.whatsapp.com/send?phone=6282210102006" target="_blank">
-        <img src="assets/bubble.svg" alt="">
+        <img src="assets/bubble.svg" alt="" data-aos="fade-up">
     </a>
       </div>
     </aside>
@@ -25,18 +25,18 @@
     <main>
       <!-- Navbar -->
       <header>
-        <div class="menu-icon">☰</div>
-        <div class="navbar">
+        <div class="menu-icon"  onclick="location.href='navbar.html'">☰</div>
+        <div class="navbar" data-aos="fade-down" data-aos-delay="450">          
             <button class="nav-button" onclick="location.href='vision.html'">Vision</button>
-            <button class="nav-button">Mission</button>
+            <button class="nav-button" onclick="location.href='Mission.html'">Mission</button>
           
         </div>
         
         <div class="nav-items"data-aos="fade-left">
           <div class="icons">
-            <span class="icon eye"></span>
-            <span class="icon user"></span>
-            <span class="icon avatar"></span>
+            <span> <img src="assets/pf1.svg" alt=""></span>
+            <span> <img src="assets/pf2.svg" alt=""></span>
+            <span> <img src="assets/pf3.svg" alt=""></span>
             <div class="extra-users">+2 others</div>
           </div>
         </div>
@@ -73,8 +73,8 @@
 
   
   <section class="text-section">
-    <h2 class="left-text">About IDN Akwhat</h2>
-    <p class="right-text">The school stands out for its focus on Information Technology (IT), ensuring that its curriculum aligns with international IT industry standards. The aim is to equip students with the necessary skills and knowledge to thrive in the ever-evolving tech world.</p>
+    <h2 class="left-text" data-aos="fade-right" data-aos-delay="400">About <br>IDN Akhwat</h2>
+    <p class="right-text" data-aos="flip-right" data-aos-delay="400">The school stands out for its focus on Information Technology (IT), ensuring that its curriculum aligns with international IT industry standards. The aim is to equip students with the necessary skills and knowledge to thrive in the ever-evolving tech world.</p>
   </section>
 
   <div class="news-section container py-5" id="News">
@@ -113,10 +113,23 @@
     </div>
   </div>
 
-  
+  <!-- jurusan -->
+
+  <section class="portfolio" id="portfolio" data-aos="fade-up">
+    <div class="portfolio-container" data-aos="fade-up" data-aos-delay="100">
+      <div class="portfolio-box">
+        <img src="assets/jurusan1.svg" alt="project 1">
+      </div>
+      <div class="portfolio-box" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/jurusan2.svg" alt="project 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- jurusna -->
 
 <!-- START CONTACT -->
-  <div class="contact" id="text"><div id="text" data-aos="zoom-out-up">
+<div class="contact" id="text"><div id="text" data-aos="zoom-out-up">
     <div class="line">
       <p class="word">Go</p>
       <p class="word">Contact</p>
@@ -147,16 +160,15 @@
 
 
   <!-- IDN HEBAT -->
-   <section class="grid">
-  <div class="grid-container">
-    <div class="grid-item red">Image 1</div>
-    <div class="grid-item purple-long">Image 2</div>
-    <div class="grid-item lavender">Image 3</div>
-    <div class="grid-item yellow">Image 4</div>
-    <div class="grid-item blue-long">Image 5</div>
+ 
+  <!-- START COME JOIN US -->
+  <div class="page-wrapper">
+    <h1 class="title-header" data-text="COME JOIN US">COME JOIN US</h1>
+  
 
   </div>
-</section>
+  
+
         
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -180,6 +192,7 @@
   </script>
   <script src="js/contact.js"></script>
   <script src="js/cursor.js"></script>
+  <script src="js/joinus.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
   <script>

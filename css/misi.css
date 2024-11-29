@@ -1,0 +1,182 @@
+
+
+main {
+    background-image: url('assets/Frame 11 (2).png');
+    background-size: cover;       
+    background-position: center;   
+    background-attachment: fixed;  
+    width: 100%;
+    height: 100vh;                 /* Mengatur tinggi 100% dari viewport */
+    display: block;
+ }
+ 
+ 
+ .bg-body-tertiary {
+    width: 100%; /* Pastikan card melebar penuh */
+ }
+ 
+ 
+ @keyframes clipPathReveal {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    50% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+ }
+ 
+ 
+ @keyframes gradientShift {
+    0% {
+        background: linear-gradient(135deg, #D67AFF, #94E2FF);
+    }
+    50% {
+        background: linear-gradient(135deg, #bd92e1, #D67AFF);
+    }
+    100% {
+        background: linear-gradient(135deg, #D67AFF, #7846F3);
+    }
+ }
+ 
+ 
+ .p-5.mb-4 {
+    animation: clipPathReveal 1.5s ease-out, gradientShift 6s infinite alternate;
+    background-size: 300% 300%; /* Untuk gradien bergerak */
+    overflow: hidden;
+ }
+ 
+ 
+ @keyframes textZoomFade {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+ }
+ 
+ 
+ .container-fluid h1 {
+    animation: textZoomFade 1.2s ease-in-out;
+    animation-delay: 0.5s;
+ }
+ 
+ 
+ .container-fluid p {
+    animation: textZoomFade 1.4s ease-in-out;
+    animation-delay: 0.8s;
+ }
+ 
+ 
+ 
+ 
+ /* Kode animasi shake yang diperbarui */
+ @keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px); /* Jarak pergerakan lebih kecil */
+    }
+    50% {
+        transform: translateX(5px);  /* Jarak pergerakan lebih kecil */
+    }
+    75% {
+        transform: translateX(-5px); /* Jarak pergerakan lebih kecil */
+    }
+    100% {
+        transform: translateX(0);
+    }
+ }
+ 
+ 
+ /* Efek 3D dan Getar saat Hover */
+ .shake-box {
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out; /* Durasi transisi lebih lama */
+    transform-style: preserve-3d; /* Memungkinkan elemen menjadi 3D */
+    perspective: 1000px; /* Jarak tampilan 3D */
+ }
+ 
+ 
+ /* Efek 3D saat Hover */
+ .shake-box:hover {
+    animation: shake 2s ease-in-out 1; /* Animasi getaran lebih lama */
+    transform: rotateX(5deg) rotateY(5deg) scale(1.05); /* Rotasi dan skala lebih kecil */
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15); /* Bayangan lebih lembut */
+ }
+ 
+ 
+ /* Kode animasi shake yang diperbarui (lebih halus) */
+ @keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px); /* Jarak pergerakan lebih kecil */
+    }
+    50% {
+        transform: translateX(5px);  /* Jarak pergerakan lebih kecil */
+    }
+    75% {
+        transform: translateX(-5px); /* Jarak pergerakan lebih kecil */
+    }
+    100% {
+        transform: translateX(0);
+    }
+ }
+ 
+ 
+ /* Efek 3D dan Getar saat Hover */
+ .shake-box {
+    transition: transform 0.6s ease-in-out, box-shadow 0.6s ease-in-out; /* Durasi transisi lebih lama */
+    transform-style: preserve-3d; /* Memungkinkan elemen menjadi 3D */
+    perspective: 1000px; /* Jarak tampilan 3D */
+ }
+ 
+ 
+ /* Efek 3D dan Getar saat Hover */
+ .shake-box {
+    transition: transform 0.8s ease-in-out, box-shadow 0.8s ease-in-out; /* Durasi transisi lebih lama dan lebih halus */
+    transform-style: preserve-3d; /* Memungkinkan elemen menjadi 3D */
+    perspective: 1000px; /* Jarak tampilan 3D */
+ }
+ 
+ 
+ /* Efek 3D saat Hover */
+ .shake-box:hover {
+    animation: shake 2s ease-in-out 1; /* Animasi getaran lebih lama */
+    transform: rotateX(5deg) rotateY(5deg) scale(1.05); /* Rotasi dan skala lebih kecil */
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15); /* Bayangan lebih lembut */
+ }
+ 
+ 
+ /* Kode animasi shake yang diperbarui (lebih halus) */
+ @keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px); /* Jarak pergerakan lebih kecil */
+    }
+    50% {
+        transform: translateX(5px);  /* Jarak pergerakan lebih kecil */
+    }
+    75% {
+        transform: translateX(-5px); /* Jarak pergerakan lebih kecil */
+    }
+    100% {
+        transform: translateX(0);
+    }
+ }
+ 
+ 
+ 
